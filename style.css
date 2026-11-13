@@ -1,0 +1,86 @@
+/* IPTV UK — Firestick install guide. Ember theme: near-black, flame orange, warm ivory. */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  color: #23211f;
+  background: #fbf6ef;
+  line-height: 1.65;
+}
+a { color: #c2410c; }
+a:hover { color: #9a3412; }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+/* Header */
+.site-header { background: #171412; color: #fff; position: sticky; top: 0; z-index: 10; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; padding-bottom: 12px; }
+.brand { color: #fff; font-size: 1.5rem; font-weight: 800; letter-spacing: .04em; text-decoration: none; }
+.brand span { color: #ff7a1a; }
+.top-nav a { color: #f5ede4; text-decoration: none; margin-left: 18px; font-size: .95rem; }
+.top-nav a:hover { color: #ff7a1a; }
+.nav-cta { background: #ff6a00; color: #fff !important; padding: 8px 16px; border-radius: 999px; font-weight: 700; }
+.nav-cta:hover { background: #e85d00; }
+
+/* Hero */
+.hero { background: linear-gradient(135deg, #171412 0%, #3a1c0d 55%, #7c2d12 100%); color: #fff; padding: 56px 0 48px; }
+.kicker { color: #ffb37a; text-transform: uppercase; letter-spacing: .14em; font-size: .8rem; font-weight: 700; margin: 0 0 12px; }
+.hero h1 { font-size: 2.4rem; line-height: 1.15; margin: 0 0 16px; }
+.lede { font-size: 1.12rem; color: #f7ead9; max-width: 820px; }
+.hero a { color: #ffb37a; }
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin: 26px 0 14px; }
+.btn { display: inline-block; padding: 13px 26px; border-radius: 999px; font-weight: 700; text-decoration: none; font-size: 1rem; }
+.btn-primary { background: #ff6a00; color: #fff !important; box-shadow: 0 6px 18px rgba(255, 106, 0, .45); }
+.btn-primary:hover { background: #e85d00; }
+.btn-ghost { border: 2px solid #ffb37a; color: #ffb37a !important; }
+.btn-ghost:hover { background: rgba(255, 179, 122, .12); }
+.hero-note { font-size: .92rem; color: #f0dcc8; }
+
+/* Body sections */
+main section { padding: 34px 0 8px; }
+h2 { font-size: 1.7rem; line-height: 1.25; color: #171412; border-left: 6px solid #ff6a00; padding-left: 14px; margin: 0 0 18px; }
+h3 { font-size: 1.2rem; color: #7c2d12; margin: 22px 0 8px; }
+p { margin: 0 0 14px; }
+
+.check-list { list-style: none; padding: 0; margin: 0 0 16px; }
+.check-list li { background: #fff; border: 1px solid #f0dcc8; border-left: 5px solid #ff6a00; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px; }
+.tip-box { background: #fff3e6; border: 1px dashed #ff6a00; border-radius: 10px; padding: 16px 20px; }
+
+/* Step timeline */
+.steps { position: relative; }
+.step-card { position: relative; background: #fff; border: 1px solid #ead9c6; border-radius: 14px; padding: 22px 24px 8px 74px; margin: 0 0 18px; box-shadow: 0 2px 10px rgba(23, 20, 18, .06); }
+.step-card h3 { margin-top: 4px; }
+.step-num { position: absolute; left: 18px; top: 20px; width: 40px; height: 40px; border-radius: 50%; background: #ff6a00; color: #fff; font-weight: 800; font-size: .8rem; display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1.1; padding: 4px; }
+
+/* Player grid */
+.player-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 18px 0; }
+.player-card { background: #171412; color: #f7ead9; border-radius: 14px; padding: 20px 22px; border-top: 5px solid #ff6a00; }
+.player-card h3 { color: #ffb37a; margin-top: 0; }
+.player-card a { color: #ffb37a; }
+.player-card p { margin-bottom: 0; }
+
+.faq h3 { color: #171412; }
+.verdict { background: #171412; color: #f7ead9; border-radius: 16px; padding: 30px 28px; margin: 30px 0 40px; }
+.verdict h2 { color: #fff; border-left-color: #ff6a00; }
+.verdict a { color: #ffb37a; }
+.verdict .btn-ghost { color: #ffb37a !important; }
+.small-print { font-size: .85rem; color: #d8c9b8; }
+
+/* Footer / explore */
+.explore { background: #171412; color: #f5ede4; padding: 44px 0 30px; }
+.explore h2 { color: #fff; border-left-color: #ff6a00; }
+.explore-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 22px; }
+.explore-group h3 { color: #ffb37a; font-size: 1rem; margin-top: 0; }
+.explore-group ul { list-style: none; padding: 0; margin: 0; }
+.explore-group li { margin-bottom: 7px; }
+.explore-group a { color: #f5ede4; text-decoration: none; font-size: .93rem; }
+.explore-group a:hover { color: #ff7a1a; text-decoration: underline; }
+.footer-note { margin-top: 30px; padding-top: 18px; border-top: 1px solid #3a312b; font-size: .9rem; color: #cbb9a6; }
+.footer-note a { color: #ffb37a; }
+
+@media (max-width: 760px) {
+  .hero h1 { font-size: 1.8rem; }
+  .player-grid, .explore-grid { grid-template-columns: 1fr; }
+  .top-nav a:not(.nav-cta) { display: none; }
+  .step-card { padding-left: 22px; padding-top: 66px; }
+  .step-num { left: 18px; top: 14px; }
+}
